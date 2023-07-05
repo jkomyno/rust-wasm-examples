@@ -48,7 +48,7 @@ describe('read-function-from-object', () => {
       } catch (e) {
         const error = e as Error
         expect(error instanceof Error).toBeTruthy()
-        expect(error.name).toEqual('RuntimeError')
+        expect(error.name).toEqual('RuntimeError')>
         expect(error.message).toEqual('unreachable') // panic!
       }
     })
@@ -62,8 +62,7 @@ describe('read-function-from-object', () => {
           stack.push('fn3')
         }
       }
-  
-      // @ts-ignore
+
       wasm.call_fn3(obj)
       wasm.call_fn3(obj)
       wasm.call_fn3(obj)
