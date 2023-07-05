@@ -92,7 +92,8 @@ Without Docker:
 
 Can you pass an object of functions from JS to Rust, and call them from Rust?
 It turns out you can, either by using `js_sys` or `wasm-bindgen(getter_with_clone)`.
-Please refer to the [./rust/read-function-from-object/src/lib.rs](Rust code) and the [./nodejs/demo/__tests__/read-function-from-object.test.ts](Node.js tests) for more details.
+
+Please refer to the [Rust code](./rust/read-function-from-object/src/lib.rs) and the [Node.js tests](./nodejs/demo/__tests__/read-function-from-object.test.ts) for more details.
 
 ## 👤 Author
 
