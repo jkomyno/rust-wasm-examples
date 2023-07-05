@@ -1,0 +1,20 @@
+[package]
+name = "read-function-from-object"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+# build a C-style shared library that can be dynamically loaded by Node.js
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = { workspace = true }
+serde = { workspace = true }
+serde-wasm-bindgen = { workspace = true }
+wasm-bindgen-futures = { version = "0.4" }
+js-sys = { version = "0.3" }
+tsify = { workspace = true }
+serde_json = { workspace = true }
+ducktor = "0.1.0"

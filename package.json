@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "@jkomyno/rust-wasm-examples",
+  "engines": {
+    "pnpm": ">=7"
+  },
+  "packageManager": "pnpm@7.20.0",
+  "devDependencies": {
+    "@iarna/toml": "^2.2.5",
+    "@types/node": "^18.16.19",
+    "chalk": "^5.3.0",
+    "execa": "^7.1.1",
+    "ora": "^6.3.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "vitest": "^0.29.8"
+  },
+  "scripts": {
+    "build:wasm": "pnpm run --filter \"@jkomyno/rust-wasm-examples-scripts\" build:wasm",
+    "test": "pnpm run --filter \"@jkomyno/rust-wasm-examples-demo\" test",
+    "test:ci": "pnpm run --filter \"@jkomyno/rust-wasm-examples-demo\" test:ci"
+  }
+}

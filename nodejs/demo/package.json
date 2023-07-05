@@ -1,0 +1,28 @@
+{
+  "name": "@jkomyno/rust-wasm-examples-demo",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Demo usage of WebAssembly in Node.js + TypeScript",
+  "author": "Alberto Schiabel (@jkomyno)",
+  "keywords": [
+    "Node.js",
+    "Rust",
+    "TypeScript",
+    "WebAssembly",
+    "Wasm"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "test:ci": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.19",
+    "typescript": "^5.1.6",
+    "vite": "^4.3.9",
+    "vite-plugin-wasm": "^3.2.2",
+    "vitest": "0.28.5"
+  }
+}
