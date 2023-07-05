@@ -8,7 +8,7 @@ pub struct NamedFnRef {
   fn2: JsFunction,
 }
 
-/// Read
+/// Read the `fn1` and `fn2` functions from the `raw_driver` object.
 fn reify(raw_driver: JsObject) -> NamedFnRef {
   let fn1 = JsReflect::get(&raw_driver, &"fn1".into())
     .expect(r#"Property "fn1" does not exist"#)
